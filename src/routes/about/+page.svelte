@@ -9,6 +9,10 @@ import dev from '$lib/images/braces.svg';
 <svelte:head>
 	<title>About</title>
 	<meta name="description" content="About this app" />
+	<meta title="Sebasopdev---Sebastian Ocampo" content="Title"/>
+	<meta name="description" content="Personal Portfolio" />
+  	<meta name="keywords" content="Portafolio, Sebastian Ocampo">
+  	<meta name="author" content="Sebastian Ocampo">
 </svelte:head>
 
 <div class="text-column">
@@ -25,7 +29,7 @@ import dev from '$lib/images/braces.svg';
 	</p>
 
 	<p>
-		<img src={dev} alt="PC icon" /> HTML, REACT, JS & SVELTE
+		<img src={dev} alt="PC icon" /> HTML, REACT, JS, PYTHON & SVELTE
 	</p>
 
 
@@ -39,10 +43,10 @@ import dev from '$lib/images/braces.svg';
 		Auto watering plant sistem for arduino <a href="https://github.com/sebasop320/auto_riego">Github Project</a>
 	</li>
 	<li>
-		Weather desktop app using tauri <a href="https://github.com/sebasop320/weather-app">Github Project</a> (the Project was discarded so is not longer maintaind by me)
+		Weather desktop app using Tauri <a href="https://github.com/sebasop320/weather-app">Github Project</a> (the Project was discarded so is not longer maintaind by me)
 	</li>
 	<li>
-		Old react portfolio <a href="https://github.com/sebasop320/react-portfolio">Github Project</a>
+		Old React portfolio <a href="https://github.com/sebasop320/react-portfolio">Github Project</a>
 	</li>
 </ul>
 

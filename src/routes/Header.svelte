@@ -1,12 +1,12 @@
 <script>
 	import { page } from '$app/stores';
-	import me from '$lib/images/me.jpg';
+	import me from '$lib/images/me.png';
 	import github from '$lib/images/github.svg';
 </script>
 
 <header>
 	<div class="corner">
-		<img src={me} alt="yo" />	
+		<img src={me} alt="logo" />	
 	</div>
 
 	<nav>

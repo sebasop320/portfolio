@@ -35,6 +35,7 @@
 	</div>
 
 	<p>This time we guessed right! You have <strong>six</strong> guesses to get the word.</p>
+	<p>Return to <a href="./">game</a></p>
 </div>
 
 <style>

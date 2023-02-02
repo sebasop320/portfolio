@@ -6,9 +6,9 @@
 
 <svelte:head>
 	<title>Sebasop320 --- Portolio</title>
-	<meta name="description" content="Personal Portfolio" />
-  	<meta name="description" content="Free Web tutorials">
-  	<meta name="keywords" content="portfolio, Sebastian Ocampo, sebastian Ocampo, developer in panama, desarrollador en panama, desarollador ">
+	<meta title="Sebasopdev---Sebastian Ocampo"/>
+	<meta name="description" content="Hi i'm Sebasop320 an enthusiast developer, i`m verry passionate about tech and airplanes" />
+  	<meta name="keywords" content="portfolio, sebasop320, sebastian ocampo">
   	<meta name="author" content="Sebastian Ocampo">
 </svelte:head>
 

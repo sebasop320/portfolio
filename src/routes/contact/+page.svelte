@@ -9,7 +9,29 @@
           alert('FAILED...', error.text);
       });
   }
+
+  import { emailValidator, requiredValidator } from './validators.js'
+  import { createFieldValidator } from './validation.js'
+
+  const [ validity, validate ] = createFieldValidator(requiredValidator(), emailValidator())
+	
+	let email = null
+
+
+
 </script>
+<title>Let's have a talk</title>
+
+<h1>Let's have a talk
+<style>
+  h1{
+    color: #f25416;
+    font-family: 'Bold'
+    font-weight: 'bold';
+    font-size: 4em;
+  }
+  </style>
+  </h1>
 
 <form on:submit|preventDefault={sendEmail}>
   <label>Name</label>
@@ -19,27 +41,15 @@
   <label>Message</label>
   <textarea name="message"></textarea>
   <input type="submit" value="Send">
-</form>
-
-
-
 <style>
-	input[type=email], select, textarea {
-  width: 100%; /* Full width */
-  padding: 12px; /* Some padding */ 
-  border: 1px solid #ccc; /* Gray border */
-  border-radius: 4px; /* Rounded borders */
-  box-sizing: border-box; /* Make sure that padding and width stays in place */
-  margin-top: 6px; /* Add a top margin */
-  margin-bottom: 16px; /* Bottom margin */
-  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
-}
+
+
 
 /* Style the submit button with a specific background color etc */
 input[type=submit] {
   background-color: #04AA6D;
   color: white;
-  padding: 12px 20px;
+  
   border: none;
   border-radius: 4px;
   cursor: pointer;
@@ -56,4 +66,13 @@ input[type=submit]:hover {
   background-color: #f2f2f2;
   padding: 20px;
 }
+
+
 </style>
+
+
+
+
+</form>
+
+
