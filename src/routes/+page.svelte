@@ -5,8 +5,8 @@
 </script>
 
 <svelte:head>
-	<title>Sebasop320 --- Portolio</title>
-	<meta title="Sebasopdev---Sebastian Ocampo"/>
+	<title>Sebasop320 --- Sebastian Ocampo</title>
+	<meta title="Sebasopdev --- Sebastian Ocampo"/>
 	<meta name="description" content="Hi i'm Sebasop320 an enthusiast developer, i`m verry passionate about tech and airplanes" />
   	<meta name="keywords" content="portfolio, sebasop320, sebastian ocampo">
   	<meta name="author" content="Sebastian Ocampo">

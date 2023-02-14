@@ -7,9 +7,9 @@ import dev from '$lib/images/braces.svg';
 
 
 <svelte:head>
-	<title>About</title>
+	<title>About --- Sebasop320 --- Sebastian Ocampo</title>
 	<meta name="description" content="About this app" />
-	<meta title="Sebasopdev---Sebastian Ocampo" content="Title"/>
+	<meta title="Sebasopdev --- Sebastian Ocampo" content="Title"/>
 	<meta name="description" content="Personal Portfolio" />
   	<meta name="keywords" content="Portafolio, Sebastian Ocampo">
   	<meta name="author" content="Sebastian Ocampo">
@@ -29,7 +29,7 @@ import dev from '$lib/images/braces.svg';
 	</p>
 
 	<p>
-		<img src={dev} alt="PC icon" /> HTML, REACT, JS, PYTHON & SVELTE
+		<img src={dev} alt="PC icon" /> HTML, REACT JS, JS, PYTHON & SVELTE
 	</p>
 
 
