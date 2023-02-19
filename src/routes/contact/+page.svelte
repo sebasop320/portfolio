@@ -2,7 +2,7 @@
   import emailjs from '@emailjs/browser';
 
   function sendEmail(e) {
-    emailjs.sendForm('service_4bzrx0a', 'template_94gqytg', e.target, 'kYZTkMFOPTOCbLSAC')
+    emailjs.sendForm('service', 'template', e.target, 'kEY')
       .then((result) => {
           alert('SUCCESS!', result.text);
       }, (error) => {
