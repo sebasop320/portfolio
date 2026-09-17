@@ -1,0 +1,101 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (Tailwind v4 opts into media queries by default). */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+	--font-sans: 'Inter', ui-sans-serif, system-ui, -apple-system, sans-serif;
+	--font-display: 'Bricolage Grotesque', 'Inter', ui-sans-serif, sans-serif;
+
+	/* Light: cool paper, not cream */
+	--color-paper: #f4f5f3;
+	--color-surface: #fbfbfa;
+	--color-ink: #14171a;
+	--color-graphite: #596166;
+	--color-line: #e0e1dc;
+
+	/* Dark: green-shifted charcoal */
+	--color-void: #0f1211;
+	--color-slab: #171b1a;
+	--color-chalk: #e9ebe8;
+	--color-ash: #949c99;
+	--color-seam: #262b29;
+
+	/* The one accent */
+	--color-pine: #166b56;
+	--color-mint: #54c8a4;
+}
+
+@layer base {
+	html {
+		background-color: var(--color-paper);
+		/* Anchor targets clear the sticky header. */
+		scroll-padding-top: 5.5rem;
+	}
+
+	html.dark {
+		background-color: var(--color-void);
+	}
+
+	body {
+		@apply bg-paper text-ink dark:bg-void dark:text-chalk font-sans antialiased;
+	}
+
+	h1,
+	h2,
+	h3 {
+		@apply font-display;
+		font-feature-settings: 'ss01';
+	}
+
+	::selection {
+		@apply bg-pine text-paper;
+	}
+
+	.dark ::selection {
+		@apply bg-mint text-void;
+	}
+
+	:focus-visible {
+		outline: 2px solid var(--color-pine);
+		outline-offset: 3px;
+		border-radius: 2px;
+	}
+
+	.dark :focus-visible {
+		outline-color: var(--color-mint);
+	}
+
+	@media (prefers-reduced-motion: reduce) {
+		html {
+			scroll-behavior: auto;
+		}
+
+		*,
+		*::before,
+		*::after {
+			animation-duration: 0.01ms !important;
+			animation-delay: 0ms !important;
+			animation-iteration-count: 1 !important;
+			transition-duration: 0.01ms !important;
+		}
+	}
+}
+
+@layer components {
+	/* Single orchestrated page-load sequence, used only in the hero. */
+	.rise {
+		animation: rise 0.7s cubic-bezier(0.2, 0.7, 0.2, 1) backwards;
+	}
+
+	@keyframes rise {
+		from {
+			opacity: 0;
+			transform: translateY(0.75rem);
+		}
+		to {
+			opacity: 1;
+			transform: none;
+		}
+	}
+}

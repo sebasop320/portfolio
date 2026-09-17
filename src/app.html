@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="icon" href="%sveltekit.assets%/favicon.svg" />
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,700&family=Inter:wght@400;500;600&display=swap"
+			rel="stylesheet"
+		/>
+
+		<!--
+			Runs before paint so the page never flashes the wrong theme or language.
+			Keep the storage keys in sync with src/lib/stores/theme.js and i18n.js.
+		-->
+		<script>
+			(() => {
+				try {
+					const stored = localStorage.getItem('sebasop:theme');
+					const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+					const theme = stored ?? (prefersDark ? 'dark' : 'light');
+					document.documentElement.classList.toggle('dark', theme === 'dark');
+					document.documentElement.style.colorScheme = theme;
+
+					const lang = localStorage.getItem('sebasop:lang');
+					document.documentElement.lang =
+						lang ?? (navigator.language?.toLowerCase().startsWith('es') ? 'es' : 'en');
+				} catch {
+					/* private mode / storage blocked — fall back to the markup defaults */
+				}
+			})();
+		</script>
+
+		%sveltekit.head%
+	</head>
+	<body data-sveltekit-preload-data="hover">
+		<div style="display: contents">%sveltekit.body%</div>
+	</body>
+</html>
