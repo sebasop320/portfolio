@@ -13,7 +13,7 @@
 
 <a
 	href="#main"
-	class="bg-ink text-paper dark:bg-chalk dark:text-void sr-only rounded-md px-4 py-2 text-sm focus:not-sr-only focus:absolute focus:top-3 focus:left-3 focus:z-[60]"
+	class="bg-ink text-paper dark:bg-chalk dark:text-void sr-only rounded-md px-4 py-2 text-sm focus:not-sr-only focus:absolute focus:top-3 focus:left-3 focus:z-60"
 >
 	{$t('nav.skip')}
 </a>
