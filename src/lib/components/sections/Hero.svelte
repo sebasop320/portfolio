@@ -4,7 +4,7 @@
 
 <section id="top" class="mx-auto max-w-5xl px-5 pt-20 pb-24 sm:px-8 sm:pt-28 sm:pb-32">
 	<p class="rise text-graphite dark:text-ash flex items-center gap-2 text-sm">
-		<span class="bg-pine dark:bg-mint inline-block size-1.5 rounded-full"></span>
+		<!-- <span class="bg-pine dark:bg-mint inline-block size-1.5 rounded-full"></span> -->
 		{$t('hero.status')}
 	</p>
 

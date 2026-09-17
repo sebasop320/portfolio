@@ -92,7 +92,7 @@ npm i @lucide/svelte
 import { Sun, Moon, Menu, X } from '@lucide/svelte';
 ```
 
-## Before you deploy
+## Before deployment
 
 - Replace the contact handles in `Contact.svelte` and the repo/demo URLs in `data/projects.js`.
 - Swap `@sveltejs/adapter-auto` for the adapter matching your host (`adapter-static` works, since the whole site prerenders).

@@ -19,7 +19,7 @@ const dictionary = {
 			theme: { toDark: 'Switch to dark mode', toLight: 'Switch to light mode' }
 		},
 		hero: {
-			status: 'Open to new work',
+			status: '',
 			titleLine1: 'Full-stack developer',
 			titleLine2: 'and software builder',
 			bio: 'I build web applications end to end, write native tooling for macOS, and run the infrastructure underneath it — containers, reverse proxies and APIs on hardware I maintain myself. I care most about interfaces that stay fast and legible after the demo is over.',
@@ -65,7 +65,7 @@ const dictionary = {
 			lead: 'Got something to build, or a role you think fits? Email is fastest — I answer within a day or two.',
 			email: 'Email',
 			github: 'GitHub',
-			linkedin: 'LinkedIn'
+			
 		},
 		footer: {
 			rights: 'All rights reserved.',
@@ -86,7 +86,7 @@ const dictionary = {
 			theme: { toDark: 'Cambiar a modo oscuro', toLight: 'Cambiar a modo claro' }
 		},
 		hero: {
-			status: 'Disponible para proyectos',
+			status: '',
 			titleLine1: 'Desarrollador full-stack',
 			titleLine2: 'y constructor de software',
 			bio: 'Construyo aplicaciones web de punta a punta, escribo herramientas nativas para macOS y administro la infraestructura que las sostiene: contenedores, proxies inversos y APIs en servidores que mantengo yo mismo. Me importan sobre todo las interfaces que siguen siendo rápidas y claras mucho después de la demo.',
@@ -132,7 +132,7 @@ const dictionary = {
 			lead: '¿Tienes algo que construir o una vacante que encaje? El correo es lo más rápido: respondo en uno o dos días.',
 			email: 'Correo',
 			github: 'GitHub',
-			linkedin: 'LinkedIn'
+			
 		},
 		footer: {
 			rights: 'Todos los derechos reservados.',

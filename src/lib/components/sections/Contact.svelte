@@ -4,14 +4,14 @@
 	import { t } from '$lib/stores/i18n.js';
 
 	const channels = [
-		{ icon: 'mail', key: 'contact.email', handle: 'hola@sebasop.dev', href: 'mailto:hola@sebasop.dev' },
-		{ icon: 'github', key: 'contact.github', handle: 'sebasop', href: 'https://github.com/sebasop' },
-		{
-			icon: 'linkedin',
-			key: 'contact.linkedin',
-			handle: 'sebasocampo',
-			href: 'https://www.linkedin.com/in/sebasocampo'
-		}
+		{ icon: 'mail', key: 'contact.email', handle: 'sebasop2031@gmai.com', href: 'mailto:sebasop2031@gmail.com' },
+		{ icon: 'github', key: 'contact.github', handle: 'sebasop320', href: 'https://github.com/sebasop' },
+		//{
+		//	icon: 'linkedin',
+		//	key: 'contact.linkedin',
+		//	handle: 'sebasocampo',
+		//	href: 'https://www.linkedin.com/in/sebasocampo'
+		//}
 	];
 </script>
 
